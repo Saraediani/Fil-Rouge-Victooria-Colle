@@ -5,18 +5,18 @@
     <topHeader active="contact"/>
     <!-- end header section -->
   </div>
-    <div class="container ">
-      <div class="row">
+    <div class="container w-50 ">
+      <div class="row shadow bg-light rounded mt-5 mb-5">
         <div class="col-6">
-          <div class="p-5">
+          <div class="p-5 d-flex justify-content-center rounded">
 
-            <img :src=product.image alt="" class="img img-thumbnail img-responsive w-70">
+            <img :src=product.image alt="" class="img img-responsive w-60">
           </div>
           </div>
 
       
         <div class="col-6">
-          <div class="p-5 px-2">
+          <div class="p-5 px-2 ">
             <h1 class="h1 mb-5">{{product.name}}</h1>
             <span class="display-4 text-danger mb-3"><strong>{{product.price}}$</strong></span>
             <h2 class="h2 mb-3">Description:</h2>

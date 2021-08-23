@@ -1902,6 +1902,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
 
 /***/ }),
@@ -24960,22 +24961,16 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("section", { staticClass: "about_section layout_padding" }, [
-        _c("div", { staticClass: "container" }, [
-          _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col-md-6" }, [
-              _c("div", { staticClass: "detail-box" }, [
-                _c("div", { staticClass: "heading_container" }, [
-                  _c("h2", [_vm._v("\n              About Us\n            ")])
-                ]),
+  return _c("div", [
+    _c("section", { staticClass: "about_section layout_padding" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-6" }, [
+            _c(
+              "div",
+              { staticClass: "detail-box" },
+              [
+                _vm._m(0),
                 _vm._v(" "),
                 _c("p", [
                   _vm._v(
@@ -24983,22 +24978,39 @@ var staticRenderFns = [
                   )
                 ]),
                 _vm._v(" "),
-                _c("a", { attrs: { href: "" } }, [
+                _c("router-link", { attrs: { to: "/about" } }, [
                   _vm._v("\n            Read More\n          ")
                 ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-md-6 text-center" }, [
-              _c("div", { staticClass: "img-box" }, [
-                _c("img", {
-                  staticStyle: { width: "auto", "max-height": "350px" },
-                  attrs: { src: "images/product-2.png", alt: "" }
-                })
-              ])
-            ])
-          ])
+              ],
+              1
+            )
+          ]),
+          _vm._v(" "),
+          _vm._m(1)
         ])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "heading_container" }, [
+      _c("h2", [_vm._v("\n              About Us\n            ")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-md-6 text-center" }, [
+      _c("div", { staticClass: "img-box" }, [
+        _c("img", {
+          staticStyle: { width: "auto", "max-height": "350px" },
+          attrs: { src: "images/product-2.png", alt: "" }
+        })
       ])
     ])
   }
@@ -28173,21 +28185,25 @@ var render = function() {
         1
       ),
       _vm._v(" "),
-      _c("div", { staticClass: "container " }, [
-        _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "container w-50 " }, [
+        _c("div", { staticClass: "row shadow bg-light rounded mt-5 mb-5" }, [
           _c("div", { staticClass: "col-6" }, [
-            _c("div", { staticClass: "p-5" }, [
-              _c("img", {
-                staticClass: "img img-thumbnail img-responsive w-70",
-                attrs: { src: _vm.product.image, alt: "" }
-              })
-            ])
+            _c(
+              "div",
+              { staticClass: "p-5 d-flex justify-content-center rounded" },
+              [
+                _c("img", {
+                  staticClass: "img img-responsive w-60",
+                  attrs: { src: _vm.product.image, alt: "" }
+                })
+              ]
+            )
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "col-6" }, [
             _c(
               "div",
-              { staticClass: "p-5 px-2" },
+              { staticClass: "p-5 px-2 " },
               [
                 _c("h1", { staticClass: "h1 mb-5" }, [
                   _vm._v(_vm._s(_vm.product.name))

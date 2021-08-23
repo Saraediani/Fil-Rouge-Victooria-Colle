@@ -15,9 +15,10 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam
             </p>
-            <a href="">
+
+            <router-link to="/about">
               Read More
-            </a>
+            </router-link>
           </div>
         </div>
         <div class="col-md-6 text-center">
